@@ -1,5 +1,30 @@
-
-Drag link into bookmarks bar:
-<a href="javascript:(function() { var elem=document.createElement('script'); elem.setAttribute('src', 'https://raw.github.com/cloudhead/github-unwatcher/master/github-unwatch.js?t='+(new Date().getTime())); document.body.appendChild(elem); }())">Github Unwatcher</a>
-
-Go to <code>github.com/[username]/following</code>
+<!doctype html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 60px;
+        font-size: 24px;
+      }
+      .bookmark {
+        margin-left: 10px;
+        color: #4183c4;
+        background-color: #eee;
+        border: 1px solid #ddd;
+        box-shadow: 0px 0px 15px #ddd;
+        border-radius: 4px;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Drag this into your bookmarks bar:
+    <a class="bookmark" href="javascript:(function() { var elem=document.createElement('script'); elem.setAttribute('src', 'https://raw.github.com/cloudhead/github-unwatcher/master/github-unwatch.js?t='+(new Date().getTime())); document.body.appendChild(elem); }())">Github Unwatcher</a>
+  </p>
+  <p>Go to <code>https://github.com/[username]/following</code>.</p>
+  <p>Click the bookmarklet.</p>
+  </body>
+</html>
